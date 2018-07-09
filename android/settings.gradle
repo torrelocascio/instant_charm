@@ -1,0 +1,3 @@
+rootProject.name = 'instant_charm'
+
+include ':app'
