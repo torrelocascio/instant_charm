@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'instant_charm' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+
+  # Pods for instant_charm
+
+
+
+
+  target 'instant_charmTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'instant_charm-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for instant_charm-tvOS
+
+  target 'instant_charm-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
