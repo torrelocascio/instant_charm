@@ -10,10 +10,9 @@ import React, {Component} from 'react';
 import {AppRegistry, FlatList, StyleSheet, Platform, Text, 
   View, Image, Alert, 
   TouchableHighlight, 
-  Dimensions, TextInput} from 'react-native';
+  Dimensions, TextInput, Button} from 'react-native';
 import firebase from 'react-native-firebase';
 import {AccessToken, LoginManager, LoginButton} from 'react-native-fbsdk';
-import {Button} from 'react-native'
 
 
 export default class App extends Component{
@@ -60,7 +59,7 @@ onLoginFacebook = () => {
     return (
       <View style={{flex: 1, marginTop: Platform.OS ==='ios' ? 34 :0}}>
         <Text style={{color: 'red'}}>Test React Native FireBase</Text>
-        <Button title='Wow' containerStyle={{
+        <Button title='Facebook Login' containerStyle={{
           padding: 10,
           width:150,
           margin:20,
@@ -68,7 +67,7 @@ onLoginFacebook = () => {
           backgroundColor: 'rgb(73,104,173)'
         }}
         style={{fontSize: 18,color:'white'}}
-        onPress={this.onLoginFacebook}>Login Facebook</Button>
+        onPress={this.onLoginFacebook}/>
         </View>
     );
   }
