@@ -7,16 +7,16 @@
  */
 
 import React, {Component} from 'react';
-import {FlatList, StyleSheet, Platform, Text, 
+import {AppRegistry, FlatList, StyleSheet, Platform, Text, 
   View, Image, Alert, 
   TouchableHighlight, 
   Dimensions, TextInput} from 'react-native';
 import firebase from 'react-native-firebase';
 import {AccessToken, LoginManager, LoginButton} from 'react-native-fbsdk';
-import Button from 'react-native'
+import {Button} from 'react-native'
 
-type Props = {};
-export default class App extends Component<Props> {
+
+export default class App extends Component{
   constructor(props){
     super(props);
     this.unsubscriber = null
@@ -60,7 +60,7 @@ onLoginFacebook = () => {
     return (
       <View style={{flex: 1, marginTop: Platform.OS ==='ios' ? 34 :0}}>
         <Text style={{color: 'red'}}>Test React Native FireBase</Text>
-        <Button containerStyle={{
+        <Button title='Wow' containerStyle={{
           padding: 10,
           width:150,
           margin:20,
